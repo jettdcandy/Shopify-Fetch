@@ -1,0 +1,108 @@
+<html class="dark">
+  <head>
+    <script src="script.js"></script>
+    <style>
+
+      .dark {
+        width:325px;
+        background-color: #000;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .info-container {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding:1rem;
+      }
+
+      .content-styling {
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:3px;
+        padding-bottom:5px;
+        width: -webkit-fill-available;
+        color: #FFF;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(58.5px);
+        border-radius: 10px;
+        font-family: system-ui;
+        font-weight: 500;
+        border-radius: 5px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      li {
+        padding: 10;
+        width: fit-content;
+        color: #000;
+        background-color: #FFF;
+        font-family: system-ui;
+        font-weight: 500;
+        border-radius: 100px;
+      }
+
+      h3 { 
+        color:#fff;
+      }
+
+      .quick-actions {
+        position: sticky;
+        z-index: 999;
+        bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        gap:4px;
+      }
+
+      #product-admin-link {
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 1rem;
+        background: #95BF47;
+        border-radius: 8px;
+        font-family: system-ui;
+        font-weight: 500;
+        text-decoration: none;
+        filter: drop-shadow(0 0 0.75rem #95BF47);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <img src="/Fetch-Logo.svg" width="200">
+    </div>
+  <div class="info-container">
+    <div class="content-styling">
+    <h3>Product ID</h3>
+      <p id="product-id"></p>
+    </div>
+    <div class="content-styling">
+    <h3>Product Name</h3>
+      <p id="product-name"></p>
+    </div>
+    <div class="content-styling">
+      <h3>Tags</h3>
+      <ul id="product-tag-list"></ul>
+    </div>
+    <div class="quick-actions">
+      <a id="product-admin-link" target="_blank" rel="noopener noreferrer">Edit Product Information</a>
+    </div>
+  </div>
+  </body>
+</html>

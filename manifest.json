@@ -1,0 +1,17 @@
+{
+  "name": "Shopify Product Fetch",
+  "description": "Quickly fetch product information on Shopify stores.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "cross_origin_embedder_policy": {
+    "value": "require-corp"
+  },
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": ["*://*.example.com/*"]
+  }],
+  "action": {
+    "default_popup": "shopifyfetch.html"
+  },
+  "permissions": ["activeTab", "tabs"]
+}
