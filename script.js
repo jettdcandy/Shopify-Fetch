@@ -42,3 +42,9 @@ function shopifyfetch() {
   });
 
 };
+
+// Event listener for button close-button click to close extension window
+
+document.getElementById('close-button').addEventListener("click", () => {
+  window.close();
+});
