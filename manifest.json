@@ -1,8 +1,13 @@
 {
   "name": "Shopify Product Fetch",
+  "manifest_version": 3,
   "description": "Quickly fetch product information on Shopify stores.",
   "version": "1.0",
-  "manifest_version": 3,
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  },
   "cross_origin_embedder_policy": {
     "value": "require-corp"
   },
